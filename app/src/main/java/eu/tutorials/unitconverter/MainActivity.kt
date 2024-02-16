@@ -63,40 +63,42 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun UnitConverter(){
 
-    
+
 
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        
+
         Text("Unit Converter", style = MaterialTheme.typography.headlineLarge)
         Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(value = "" , onValueChange = {})
-        
+        Spacer(modifier = Modifier.height(16.dp))
+
         Row {
             Box {
-                
+
                 Button(onClick = {}) {
                     Text(text = "Select")
                     Icon(Icons.Default.ArrowDropDown,
                         contentDescription = "Arrow Down")
                 }
-                
+
             }
             Box {
-                
+
                 Button(onClick = {}) {
                     Text(text = "Select")
                     Icon(Icons.Default.ArrowDropDown,
                         contentDescription = "Arrow Down")
-                }         
+                }
+
+            }
 
         }
 
-        }
-
+        Spacer(modifier = Modifier.height(16.dp))
         Text("Result")
     }
 }
