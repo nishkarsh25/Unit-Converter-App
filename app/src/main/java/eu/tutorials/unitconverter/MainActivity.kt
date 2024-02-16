@@ -72,9 +72,13 @@ fun UnitConverter(){
         OutlinedTextField(value = "" , onValueChange = {})
         
         Row {
-            
+            Button(onClick = {}) {
+                    Text("Click Me!")
+                }
 
         }
+
+        Text("Result")
     }
 }
 
