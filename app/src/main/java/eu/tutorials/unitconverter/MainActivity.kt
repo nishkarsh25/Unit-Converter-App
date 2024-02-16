@@ -72,9 +72,24 @@ fun UnitConverter(){
         OutlinedTextField(value = "" , onValueChange = {})
         
         Row {
-            Button(onClick = {}) {
-                    Text("Click Me!")
+            Box {
+                
+                Button(onClick = {}) {
+                    Text(text = "Select")
+                    Icon(Icons.Default.ArrowDropDown,
+                        contentDescription = "Arrow Down")
                 }
+                
+            }
+            Box {
+                
+                Button(onClick = {}) {
+                    Text(text = "Select")
+                    Icon(Icons.Default.ArrowDropDown,
+                        contentDescription = "Arrow Down")
+                }         
+
+        }
 
         }
 
