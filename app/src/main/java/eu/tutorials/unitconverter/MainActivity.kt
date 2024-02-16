@@ -85,6 +85,25 @@ fun UnitConverter(){
                         contentDescription = "Arrow Down")
                 }
 
+                DropdownMenu(expanded = true, onDismissRequest = {}) {
+                    DropdownMenuItem(
+                        text = { Text("Centimeters") },
+                        onClick = {}
+                    )
+                    DropdownMenuItem(
+                        text = { Text("Meters") },
+                        onClick = {}
+                    )
+                    DropdownMenuItem(
+                        text = { Text("Feet") },
+                        onClick = {}
+                    )
+                    DropdownMenuItem(
+                        text = { Text("Milimeters") },
+                        onClick = {}
+                    )
+                }
+
             }
             Box {
 
@@ -92,6 +111,25 @@ fun UnitConverter(){
                     Text(text = "Select")
                     Icon(Icons.Default.ArrowDropDown,
                         contentDescription = "Arrow Down")
+                }
+
+                DropdownMenu(expanded = true, onDismissRequest = {}) {
+                    DropdownMenuItem(
+                        text = { Text("Centimeters") },
+                        onClick = {}
+                    )
+                    DropdownMenuItem(
+                        text = { Text("Meters") },
+                        onClick = {}
+                    )
+                    DropdownMenuItem(
+                        text = { Text("Feet") },
+                        onClick = {}
+                    )
+                    DropdownMenuItem(
+                        text = { Text("Milimeters") },
+                        onClick = {}
+                    )
                 }
 
             }
