@@ -63,7 +63,14 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun UnitConverter(){
 
-
+    var inputValue by remember { mutableStateOf("") }
+    var outputValue by remember { mutableStateOf("") }
+    var inputUnit by remember { mutableStateOf("Meters") }
+    var outputUnit by remember { mutableStateOf("Meters") }
+    var iExpanded by remember { mutableStateOf(false) }
+    var oExpanded by remember { mutableStateOf(false) }
+    val conversionFactor = remember { mutableStateOf(1.00) }
+    val oConversionFactor = remember { mutableStateOf(1.00) }
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -73,7 +80,12 @@ fun UnitConverter(){
 
         Text("Unit Converter", style = MaterialTheme.typography.headlineLarge)
         Spacer(modifier = Modifier.height(16.dp))
-        OutlinedTextField(value = "" , onValueChange = {})
+        OutlinedTextField(
+            value = inputValue,
+            onValueChange = {
+                inputValue = it
+            },
+            label = {Text("Enter Value") })
         Spacer(modifier = Modifier.height(16.dp))
 
         Row {
